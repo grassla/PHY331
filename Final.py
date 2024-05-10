@@ -22,7 +22,6 @@ w=float((sigma)/(beta*c*epsilon_naught))
 
 
 def f(u, z):
-    #return (u[1], (.188 * u[1]) - (336 * u[0]) )
     return (u[1], (w) * u[1] - k**2 * u[0] )
 Ez0 = [100, 100]
 zs = np.linspace(90, 100, 100)
@@ -36,7 +35,6 @@ plt.show()
 
 ### Et ###
 def f(v, t):
-    #return (u[1], (.188 * u[1]) - (336 * u[0]) )
     return (v[1], - ((k**2)*(c**2)) * v[0] )
 Et0 = [100, 100]
 tts = np.linspace(90, 100, 100)
